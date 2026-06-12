@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jannik Sinner Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    p {
+      color: #4b5563;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 16px;
+      background: #fafafa;
+    }
+
+    .match-date {
+      font-weight: bold;
+      color: #2563eb;
+    }
+
+    .match-event {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+
+    .match-round {
+      color: #6b7280;
+    }
+
+    .status {
+      margin-top: 20px;
+      padding: 12px;
+      background: #eef2ff;
+      border-radius: 10px;
+      color: #3730a3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calendario Jannik Sinner</h1>
+    <p>App personale con aggiornamento manuale del file JSON.</p>
+
+    <div id="matches"></div>
+
+    <div class="status" id="status">Caricamento dati...</div>
+  </div>
+
+  <script>
+    async function loadMatches() {
+      const matchesContainer = document.getElementById("matches");
+      const status = document.getElementById("status");
+
+      try {
+        const response = await fetch("sinner.json");
+        const data = await response.json();
+
+        status.textContent = "Ultimo aggiornamento: " + data.last_update;
+        matchesContainer.innerHTML = "";
+
+        data.matches.forEach(match => {
+          const card = document.createElement("div");
+          card.className = "card";
+
+          card.innerHTML = `
+            <div class="match-date">${match.date}</div>
+            <div class="match-event">${match.tournament}</div>
+            <div>Avversario: ${match.opponent}</div>
+            <div class="match-round">Turno: ${match.round}</div>
+            <div>Superficie: ${match.surface}</div>
+          `;
+
+          matchesContainer.appendChild(card);
+        });
+      } catch (error) {
+        status.textContent = "Errore nel caricamento del file sinner.json";
+      }
+    }
+
+    loadMatches();
+  </script>
+</body>
+</html>
