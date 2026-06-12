@@ -3,107 +3,452 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jannik Sinner Calendar</title>
+  <title>Sinner Stats</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
       margin: 0;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      padding: 24px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      margin-top: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
       color: #111827;
     }
 
-    p {
-      color: #4b5563;
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
     }
 
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
+    .topbar {
+      background: white;
+      border-radius: 18px;
+      padding: 20px 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 48px;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      color: #4b5563;
+      font-size: 18px;
+      max-width: 900px;
+      line-height: 1.5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #6b7280;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 42px;
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .stat-sub {
+      margin-top: 8px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin: 32px 0 16px;
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .year-card {
+      background: white;
+      border-radius: 14px;
       padding: 16px;
-      margin-top: 16px;
-      background: #fafafa;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+
+    .year-number {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .year-detail {
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 4px;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .filters select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+      background: white;
+      font-size: 15px;
+    }
+
+    .matches {
+      display: grid;
+      gap: 14px;
+    }
+
+    .match-card {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      display: grid;
+      grid-template-columns: 140px 1fr 160px;
+      gap: 16px;
+      align-items: center;
     }
 
     .match-date {
       font-weight: bold;
-      color: #2563eb;
+      color: #1d4ed8;
+      font-size: 16px;
     }
 
-    .match-event {
+    .match-main {
       font-size: 18px;
-      margin: 6px 0;
+      font-weight: bold;
+      margin-bottom: 6px;
     }
 
-    .match-round {
-      color: #6b7280;
+    .match-meta {
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .match-right {
+      text-align: right;
+      color: #374151;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     .status {
-      margin-top: 20px;
-      padding: 12px;
-      background: #eef2ff;
-      border-radius: 10px;
-      color: #3730a3;
+      margin-top: 24px;
+      background: #e0ecff;
+      color: #1e3a8a;
+      padding: 14px 16px;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    @media (max-width: 1100px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .year-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .filters {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .stats-grid,
+      .year-grid,
+      .filters {
+        grid-template-columns: 1fr;
+      }
+
+      .match-card {
+        grid-template-columns: 1fr;
+      }
+
+      .match-right {
+        text-align: left;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Calendario Jannik Sinner</h1>
-    <p>App personale con aggiornamento manuale del file JSON.</p>
+    <div class="topbar">
+      <div class="eyebrow">Jannik Sinner · Statistiche carriera</div>
+      <h1>Tutte le partite, in un colpo d'occhio.</h1>
+      <div class="subtitle">
+        Esplora i match salvati nel tuo archivio personale. Questa versione gira gratis su GitHub Pages e legge i dati dal file sinner.json.
+      </div>
+    </div>
 
-    <div id="matches"></div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Partite totali</div>
+        <div class="stat-value" id="totalMatches">0</div>
+        <div class="stat-sub">Match presenti nel file JSON</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Vittorie</div>
+        <div class="stat-value" id="totalWins">0</div>
+        <div class="stat-sub">Da compilare nel JSON</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Sconfitte</div>
+        <div class="stat-value" id="totalLosses">0</div>
+        <div class="stat-sub">Da compilare nel JSON</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">% vittorie</div>
+        <div class="stat-value" id="winRate">0%</div>
+        <div class="stat-sub">Calcolata automaticamente</div>
+      </div>
+    </div>
+
+    <div class="section-title">Riepilogo per anno</div>
+    <div class="year-grid" id="yearGrid"></div>
+
+    <div class="section-title">Filtri</div>
+    <div class="filters">
+      <select id="yearFilter">
+        <option value="all">Tutti gli anni</option>
+      </select>
+
+      <select id="surfaceFilter">
+        <option value="all">Tutte le superfici</option>
+      </select>
+
+      <select id="resultFilter">
+        <option value="all">Tutti gli esiti</option>
+        <option value="W">Solo vittorie</option>
+        <option value="L">Solo sconfitte</option>
+      </select>
+
+      <select id="tournamentFilter">
+        <option value="all">Tutti i tornei</option>
+      </select>
+
+      <select id="opponentFilter">
+        <option value="all">Tutti gli avversari</option>
+      </select>
+    </div>
+
+    <div class="section-title">Risultati</div>
+    <div class="matches" id="matches"></div>
 
     <div class="status" id="status">Caricamento dati...</div>
   </div>
 
   <script>
-    async function loadMatches() {
+    let allMatches = [];
+
+    function safeResultValue(result) {
+      if (result === "W" || result === "L") return result;
+      return "";
+    }
+
+    function populateSelect(selectId, values, firstLabel) {
+      const select = document.getElementById(selectId);
+      select.innerHTML = `<option value="all">${firstLabel}</option>`;
+      [...values].sort().forEach(value => {
+        select.innerHTML += `<option value="${value}">${value}</option>`;
+      });
+    }
+
+    function calculateSummary(matches) {
+      const total = matches.length;
+      const wins = matches.filter(m => m.result === "W").length;
+      const losses = matches.filter(m => m.result === "L").length;
+      const winRate = total > 0 ? Math.round((wins / total) * 100) : 0;
+
+      document.getElementById("totalMatches").textContent = total;
+      document.getElementById("totalWins").textContent = wins;
+      document.getElementById("totalLosses").textContent = losses;
+      document.getElementById("winRate").textContent = winRate + "%";
+    }
+
+    function renderYearGrid(matches) {
+      const yearGrid = document.getElementById("yearGrid");
+      const yearsMap = {};
+
+      matches.forEach(match => {
+        const year = match.year || "Sconosciuto";
+        if (!yearsMap[year]) {
+          yearsMap[year] = { total: 0, wins: 0, losses: 0 };
+        }
+        yearsMap[year].total += 1;
+        if (match.result === "W") yearsMap[year].wins += 1;
+        if (match.result === "L") yearsMap[year].losses += 1;
+      });
+
+      const sortedYears = Object.keys(yearsMap).sort((a, b) => b.localeCompare(a));
+      yearGrid.innerHTML = "";
+
+      sortedYears.forEach(year => {
+        const item = yearsMap[year];
+        const rate = item.total > 0 ? Math.round((item.wins / item.total) * 100) : 0;
+
+        yearGrid.innerHTML += `
+          <div class="year-card">
+            <div class="year-number">${year}</div>
+            <div class="year-detail">${item.total} partite</div>
+            <div class="year-detail">${item.wins} vittorie · ${item.losses} sconfitte</div>
+            <div class="year-detail">${rate}% win rate</div>
+          </div>
+        `;
+      });
+    }
+
+    function renderMatches(matches) {
       const matchesContainer = document.getElementById("matches");
+      matchesContainer.innerHTML = "";
+
+      if (matches.length === 0) {
+        matchesContainer.innerHTML = `
+          <div class="match-card">
+            <div class="match-main">Nessun risultato trovato</div>
+            <div class="match-meta">Prova a cambiare i filtri oppure aggiorna il file sinner.json.</div>
+            <div class="match-right"></div>
+          </div>
+        `;
+        return;
+      }
+
+      matches.forEach(match => {
+        matchesContainer.innerHTML += `
+          <div class="match-card">
+            <div class="match-date">${match.date || "-"}</div>
+            <div>
+              <div class="match-main">${match.tournament || "-"}</div>
+              <div class="match-meta">
+                Avversario: ${match.opponent || "-"}<br>
+                Turno: ${match.round || "-"}<br>
+                Superficie: ${match.surface || "-"}
+              </div>
+            </div>
+            <div class="match-right">
+              Anno: ${match.year || "-"}<br>
+              Esito: ${match.result || "-"}<br>
+              Score: ${match.score || "-"}
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function applyFilters() {
+      const year = document.getElementById("yearFilter").value;
+      const surface = document.getElementById("surfaceFilter").value;
+      const result = document.getElementById("resultFilter").value;
+      const tournament = document.getElementById("tournamentFilter").value;
+      const opponent = document.getElementById("opponentFilter").value;
+
+      const filtered = allMatches.filter(match => {
+        return (
+          (year === "all" || String(match.year) === year) &&
+          (surface === "all" || match.surface === surface) &&
+          (result === "all" || match.result === result) &&
+          (tournament === "all" || match.tournament === tournament) &&
+          (opponent === "all" || match.opponent === opponent)
+        );
+      });
+
+      renderMatches(filtered);
+      calculateSummary(filtered);
+    }
+
+    async function loadData() {
       const status = document.getElementById("status");
 
       try {
         const response = await fetch("sinner.json");
         const data = await response.json();
 
-        status.textContent = "Ultimo aggiornamento: " + data.last_update;
-        matchesContainer.innerHTML = "";
+        allMatches = (data.matches || []).map(match => ({
+          ...match,
+          result: safeResultValue(match.result)
+        }));
 
-        data.matches.forEach(match => {
-          const card = document.createElement("div");
-          card.className = "card";
+        const years = new Set(allMatches.map(m => String(m.year)).filter(Boolean));
+        const surfaces = new Set(allMatches.map(m => m.surface).filter(Boolean));
+        const tournaments = new Set(allMatches.map(m => m.tournament).filter(Boolean));
+        const opponents = new Set(allMatches.map(m => m.opponent).filter(Boolean));
 
-          card.innerHTML = `
-            <div class="match-date">${match.date}</div>
-            <div class="match-event">${match.tournament}</div>
-            <div>Avversario: ${match.opponent}</div>
-            <div class="match-round">Turno: ${match.round}</div>
-            <div>Superficie: ${match.surface}</div>
-          `;
+        populateSelect("yearFilter", years, "Tutti gli anni");
+        populateSelect("surfaceFilter", surfaces, "Tutte le superfici");
+        populateSelect("tournamentFilter", tournaments, "Tutti i tornei");
+        populateSelect("opponentFilter", opponents, "Tutti gli avversari");
 
-          matchesContainer.appendChild(card);
-        });
+        renderYearGrid(allMatches);
+        renderMatches(allMatches);
+        calculateSummary(allMatches);
+
+        status.textContent = "Ultimo aggiornamento: " + (data.last_update || "non disponibile");
       } catch (error) {
         status.textContent = "Errore nel caricamento del file sinner.json";
       }
     }
 
-    loadMatches();
+    document.getElementById("yearFilter").addEventListener("change", applyFilters);
+    document.getElementById("surfaceFilter").addEventListener("change", applyFilters);
+    document.getElementById("resultFilter").addEventListener("change", applyFilters);
+    document.getElementById("tournamentFilter").addEventListener("change", applyFilters);
+    document.getElementById("opponentFilter").addEventListener("change", applyFilters);
+
+    loadData();
   </script>
 </body>
 </html>
