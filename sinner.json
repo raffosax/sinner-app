@@ -3,24 +3,103 @@
   "matches": [
     {
       "date": "2026-06-20",
+      "year": 2026,
       "tournament": "ATP Halle",
       "opponent": "Da aggiornare",
       "round": "Da aggiornare",
-      "surface": "Erba"
+      "surface": "Erba",
+      "result": "",
+      "score": ""
     },
     {
       "date": "2026-06-28",
+      "year": 2026,
       "tournament": "Wimbledon",
       "opponent": "Da aggiornare",
       "round": "Primo turno",
-      "surface": "Erba"
+      "surface": "Erba",
+      "result": "",
+      "score": ""
     },
     {
       "date": "2026-08-10",
+      "year": 2026,
       "tournament": "ATP Toronto",
       "opponent": "Da aggiornare",
       "round": "Da aggiornare",
-      "surface": "Cemento"
+      "surface": "Cemento",
+      "result": "",
+      "score": ""
+    },
+    {
+      "date": "2025-11-17",
+      "year": 2025,
+      "tournament": "ATP Finals",
+      "opponent": "Da aggiornare",
+      "round": "Finale",
+      "surface": "Cemento",
+      "result": "W",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2024-01-28",
+      "year": 2024,
+      "tournament": "Australian Open",
+      "opponent": "Da aggiornare",
+      "round": "Finale",
+      "surface": "Cemento",
+      "result": "W",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2023-11-19",
+      "year": 2023,
+      "tournament": "ATP Finals",
+      "opponent": "Da aggiornare",
+      "round": "Finale",
+      "surface": "Cemento",
+      "result": "L",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2022-07-31",
+      "year": 2022,
+      "tournament": "ATP Umag",
+      "opponent": "Da aggiornare",
+      "round": "Finale",
+      "surface": "Terra",
+      "result": "W",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2021-07-15",
+      "year": 2021,
+      "tournament": "ATP Washington",
+      "opponent": "Da aggiornare",
+      "round": "Da aggiornare",
+      "surface": "Cemento",
+      "result": "W",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2020-10-29",
+      "year": 2020,
+      "tournament": "ATP Sofia",
+      "opponent": "Da aggiornare",
+      "round": "Da aggiornare",
+      "surface": "Cemento",
+      "result": "W",
+      "score": "Da aggiornare"
+    },
+    {
+      "date": "2019-05-20",
+      "year": 2019,
+      "tournament": "ATP Challenger Bergamo",
+      "opponent": "Da aggiornare",
+      "round": "Da aggiornare",
+      "surface": "Cemento",
+      "result": "W",
+      "score": "Da aggiornare"
     }
   ]
 }
