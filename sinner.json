@@ -1,5 +1,5 @@
 {
-  "last_update": "2026-06-12",
+  "last_update": "2026-06-13",
   "matches": [
     {
       "date": "2026-06-20",
@@ -92,14 +92,214 @@
       "score": "Da aggiornare"
     },
     {
+      "date": "2019-04-22",
+      "year": 2019,
+      "tournament": "Budapest",
+      "opponent": "Laslo Djere",
+      "round": "R16",
+      "surface": "Clay",
+      "result": "L",
+      "score": "6-3 6-1"
+    },
+    {
+      "date": "2019-04-22",
+      "year": 2019,
+      "tournament": "Budapest",
+      "opponent": "Mate Valkusz",
+      "round": "R32",
+      "surface": "Clay",
+      "result": "W",
+      "score": "6-2 0-6 6-4"
+    },
+    {
+      "date": "2019-05-13",
+      "year": 2019,
+      "tournament": "Rome Masters",
+      "opponent": "Stefanos Tsitsipas",
+      "round": "R32",
+      "surface": "Clay",
+      "result": "L",
+      "score": "6-3 6-2"
+    },
+    {
+      "date": "2019-05-13",
+      "year": 2019,
+      "tournament": "Rome Masters",
+      "opponent": "Steve Johnson",
+      "round": "R64",
+      "surface": "Clay",
+      "result": "W",
+      "score": "1-6 6-1 7-5"
+    },
+    {
       "date": "2019-05-20",
       "year": 2019,
-      "tournament": "ATP Challenger Bergamo",
-      "opponent": "Da aggiornare",
-      "round": "Da aggiornare",
-      "surface": "Cemento",
+      "tournament": "Lyon",
+      "opponent": "Tristan Lamasine",
+      "round": "R32",
+      "surface": "Clay",
+      "result": "L",
+      "score": "6-0 7-6(5)"
+    },
+    {
+      "date": "2019-06-10",
+      "year": 2019,
+      "tournament": "s Hertogenbosch",
+      "opponent": "Nicolas Jarry",
+      "round": "R32",
+      "surface": "Grass",
+      "result": "L",
+      "score": "7-6(4) 6-3"
+    },
+    {
+      "date": "2019-07-15",
+      "year": 2019,
+      "tournament": "Umag",
+      "opponent": "Aljaz Bedene",
+      "round": "R16",
+      "surface": "Clay",
+      "result": "L",
+      "score": "7-6(3) 6-3"
+    },
+    {
+      "date": "2019-07-15",
+      "year": 2019,
+      "tournament": "Umag",
+      "opponent": "Pedro Sousa",
+      "round": "R32",
+      "surface": "Clay",
       "result": "W",
-      "score": "Da aggiornare"
+      "score": "1-6 6-3 6-4"
+    },
+    {
+      "date": "2019-08-26",
+      "year": 2019,
+      "tournament": "US Open",
+      "opponent": "Stan Wawrinka",
+      "round": "R128",
+      "surface": "Hard",
+      "result": "L",
+      "score": "6-3 7-6(4) 4-6 6-3"
+    },
+    {
+      "date": "2019-09-16",
+      "year": 2019,
+      "tournament": "St. Petersburg",
+      "opponent": "Mikhail Kukushkin",
+      "round": "R32",
+      "surface": "Hard",
+      "result": "L",
+      "score": "6-3 7-6(4)"
+    },
+    {
+      "date": "2019-10-14",
+      "year": 2019,
+      "tournament": "Antwerp",
+      "opponent": "Stan Wawrinka",
+      "round": "SF",
+      "surface": "Hard",
+      "result": "L",
+      "score": "6-3 6-2"
+    },
+    {
+      "date": "2019-10-14",
+      "year": 2019,
+      "tournament": "Antwerp",
+      "opponent": "Frances Tiafoe",
+      "round": "QF",
+      "surface": "Hard",
+      "result": "W",
+      "score": "6-4 3-6 6-3"
+    },
+    {
+      "date": "2019-10-14",
+      "year": 2019,
+      "tournament": "Antwerp",
+      "opponent": "Gael Monfils",
+      "round": "R16",
+      "surface": "Hard",
+      "result": "W",
+      "score": "6-3 6-2"
+    },
+    {
+      "date": "2019-10-14",
+      "year": 2019,
+      "tournament": "Antwerp",
+      "opponent": "Kamil Majchrzak",
+      "round": "R32",
+      "surface": "Hard",
+      "result": "W",
+      "score": "6-4 6-2"
+    },
+    {
+      "date": "2019-10-21",
+      "year": 2019,
+      "tournament": "Vienna",
+      "opponent": "Gael Monfils",
+      "round": "R16",
+      "surface": "Hard",
+      "result": "L",
+      "score": "6-3 7-6(8)"
+    },
+    {
+      "date": "2019-10-21",
+      "year": 2019,
+      "tournament": "Vienna",
+      "opponent": "Philipp Kohlschreiber",
+      "round": "R32",
+      "surface": "Hard",
+      "result": "W",
+      "score": "6-3 6-4"
+    },
+    {
+      "date": "2019-11-05",
+      "year": 2019,
+      "tournament": "NextGen Finals",
+      "opponent": "Alex De Minaur",
+      "round": "F",
+      "surface": "Hard",
+      "result": "W",
+      "score": "4-2 4-1 4-2"
+    },
+    {
+      "date": "2019-11-05",
+      "year": 2019,
+      "tournament": "NextGen Finals",
+      "opponent": "Miomir Kecmanovic",
+      "round": "SF",
+      "surface": "Hard",
+      "result": "W",
+      "score": "2-4 4-1 4-2 4-2"
+    },
+    {
+      "date": "2019-11-05",
+      "year": 2019,
+      "tournament": "NextGen Finals",
+      "opponent": "Frances Tiafoe",
+      "round": "RR",
+      "surface": "Hard",
+      "result": "W",
+      "score": "3-4(4) 4-2 4-2 4-2"
+    },
+    {
+      "date": "2019-11-05",
+      "year": 2019,
+      "tournament": "NextGen Finals",
+      "opponent": "Ugo Humbert",
+      "round": "RR",
+      "surface": "Hard",
+      "result": "L",
+      "score": "3-4(5) 4-3(3) 2-4 2-4"
+    },
+    {
+      "date": "2019-11-05",
+      "year": 2019,
+      "tournament": "NextGen Finals",
+      "opponent": "Mikael Ymer",
+      "round": "RR",
+      "surface": "Hard",
+      "result": "W",
+      "score": "4-0 4-2 4-1"
     }
   ]
 }
