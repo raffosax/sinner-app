@@ -82,15 +82,315 @@
       "score": "Da aggiornare"
     },
     {
-      "date": "2020-10-29",
-      "year": 2020,
-      "tournament": "ATP Sofia",
-      "opponent": "Da aggiornare",
-      "round": "Da aggiornare",
-      "surface": "Cemento",
-      "result": "W",
-      "score": "Da aggiornare"
-    },
+  "date": "2020-01-13",
+  "year": 2020,
+  "tournament": "Auckland",
+  "opponent": "Benoit Paire",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "L",
+  "score": "6-4 2-6 6-4"
+},
+{
+  "date": "2020-01-20",
+  "year": 2020,
+  "tournament": "Australian Open",
+  "opponent": "Marton Fucsovics",
+  "round": "R64",
+  "surface": "Hard",
+  "result": "L",
+  "score": "6-4 6-4 6-3"
+},
+{
+  "date": "2020-01-20",
+  "year": 2020,
+  "tournament": "Australian Open",
+  "opponent": "Max Purcell",
+  "round": "R128",
+  "surface": "Hard",
+  "result": "W",
+  "score": "7-6(2) 6-2 6-4"
+},
+{
+  "date": "2020-02-03",
+  "year": 2020,
+  "tournament": "Montpellier",
+  "opponent": "Mikael Ymer",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "L",
+  "score": "6-3 6-4"
+},
+{
+  "date": "2020-02-10",
+  "year": 2020,
+  "tournament": "Rotterdam",
+  "opponent": "Pablo Carreno Busta",
+  "round": "QF",
+  "surface": "Hard",
+  "result": "L",
+  "score": "7-5 3-6 7-6(6)"
+},
+{
+  "date": "2020-02-10",
+  "year": 2020,
+  "tournament": "Rotterdam",
+  "opponent": "David Goffin",
+  "round": "R16",
+  "surface": "Hard",
+  "result": "W",
+  "score": "7-6(7) 7-5"
+},
+{
+  "date": "2020-02-10",
+  "year": 2020,
+  "tournament": "Rotterdam",
+  "opponent": "Radu Albot",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "W",
+  "score": "W/O"
+},
+{
+  "date": "2020-02-17",
+  "year": 2020,
+  "tournament": "Marseille",
+  "opponent": "Daniil Medvedev",
+  "round": "R16",
+  "surface": "Hard",
+  "result": "L",
+  "score": "1-6 6-1 6-2"
+},
+{
+  "date": "2020-02-17",
+  "year": 2020,
+  "tournament": "Marseille",
+  "opponent": "Norbert Gombos",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-4 7-6(5)"
+},
+{
+  "date": "2020-08-31",
+  "year": 2020,
+  "tournament": "US Open",
+  "opponent": "Karen Khachanov",
+  "round": "R128",
+  "surface": "Hard",
+  "result": "L",
+  "score": "3-6 6-7(7) 6-2 6-0 7-6(4)"
+},
+{
+  "date": "2020-09-07",
+  "year": 2020,
+  "tournament": "Kitzbuhel",
+  "opponent": "Laslo Djere",
+  "round": "R16",
+  "surface": "Clay",
+  "result": "L",
+  "score": "6-4 6-4"
+},
+{
+  "date": "2020-09-07",
+  "year": 2020,
+  "tournament": "Kitzbuhel",
+  "opponent": "Philipp Kohlschreiber",
+  "round": "R32",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-3 6-2"
+},
+{
+  "date": "2020-09-14",
+  "year": 2020,
+  "tournament": "Rome Masters",
+  "opponent": "Grigor Dimitrov",
+  "round": "R16",
+  "surface": "Clay",
+  "result": "W",
+  "score": "4-6 6-4 6-4"
+},
+{
+  "date": "2020-09-14",
+  "year": 2020,
+  "tournament": "Rome Masters",
+  "opponent": "Stefanos Tsitsipas",
+  "round": "R32",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-1 6-7(9) 6-2"
+},
+{
+  "date": "2020-09-14",
+  "year": 2020,
+  "tournament": "Rome Masters",
+  "opponent": "Benoit Paire",
+  "round": "R64",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-2 6-1"
+},
+{
+  "date": "2020-09-28",
+  "year": 2020,
+  "tournament": "Roland Garros",
+  "opponent": "Rafael Nadal",
+  "round": "QF",
+  "surface": "Clay",
+  "result": "L",
+  "score": "7-6(4) 6-4 6-1"
+},
+{
+  "date": "2020-09-28",
+  "year": 2020,
+  "tournament": "Roland Garros",
+  "opponent": "Alexander Zverev",
+  "round": "R16",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-3 6-3 4-6 6-3"
+},
+{
+  "date": "2020-09-28",
+  "year": 2020,
+  "tournament": "Roland Garros",
+  "opponent": "Federico Coria",
+  "round": "R32",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-3 7-5 7-5"
+},
+{
+  "date": "2020-09-28",
+  "year": 2020,
+  "tournament": "Roland Garros",
+  "opponent": "Benjamin Bonzi",
+  "round": "R64",
+  "surface": "Clay",
+  "result": "W",
+  "score": "6-2 6-4 6-4"
+},
+{
+  "date": "2020-09-28",
+  "year": 2020,
+  "tournament": "Roland Garros",
+  "opponent": "David Goffin",
+  "round": "R128",
+  "surface": "Clay",
+  "result": "W",
+  "score": "7-5 6-0 6-3"
+},
+{
+  "date": "2020-10-19",
+  "year": 2020,
+  "tournament": "Cologne 2",
+  "opponent": "Alexander Zverev",
+  "round": "SF",
+  "surface": "Hard",
+  "result": "L",
+  "score": "7-6(3) 6-3"
+},
+{
+  "date": "2020-10-19",
+  "year": 2020,
+  "tournament": "Cologne 2",
+  "opponent": "Gilles Simon",
+  "round": "QF",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-3 0-6 6-4"
+},
+{
+  "date": "2020-10-19",
+  "year": 2020,
+  "tournament": "Cologne 2",
+  "opponent": "Pierre Hugues Herbert",
+  "round": "R16",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-3 6-1"
+},
+{
+  "date": "2020-10-19",
+  "year": 2020,
+  "tournament": "Cologne 2",
+  "opponent": "James Duckworth",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-1 6-2"
+},
+{
+  "date": "2020-10-26",
+  "year": 2020,
+  "tournament": "Vienna",
+  "opponent": "Andrey Rublev",
+  "round": "R16",
+  "surface": "Hard",
+  "result": "L",
+  "score": "2-1 RET"
+},
+{
+  "date": "2020-10-26",
+  "year": 2020,
+  "tournament": "Vienna",
+  "opponent": "Casper Ruud",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "W",
+  "score": "7-6(2) 6-3"
+},
+{
+  "date": "2020-11-09",
+  "year": 2020,
+  "tournament": "Sofia",
+  "opponent": "Vasek Pospisil",
+  "round": "F",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-4 3-6 7-6(3)"
+},
+{
+  "date": "2020-11-09",
+  "year": 2020,
+  "tournament": "Sofia",
+  "opponent": "Adrian Mannarino",
+  "round": "SF",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-3 7-5"
+},
+{
+  "date": "2020-11-09",
+  "year": 2020,
+  "tournament": "Sofia",
+  "opponent": "Alex De Minaur",
+  "round": "QF",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-7(3) 6-4 6-1"
+},
+{
+  "date": "2020-11-09",
+  "year": 2020,
+  "tournament": "Sofia",
+  "opponent": "Marc Andrea Huesler",
+  "round": "R16",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-3 6-4"
+},
+{
+  "date": "2020-11-09",
+  "year": 2020,
+  "tournament": "Sofia",
+  "opponent": "Marton Fucsovics",
+  "round": "R32",
+  "surface": "Hard",
+  "result": "W",
+  "score": "6-2 6-4"
+},
     {
       "date": "2019-04-22",
       "year": 2019,
